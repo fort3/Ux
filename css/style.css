@@ -1,0 +1,52 @@
+
+/* ==========================================================================
+    Navbar
+========================================================================== */
+
+.navbar{
+  background-image: url("../images/background.png") ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 97px;
+
+}
+
+nav .navbar-nav li a {
+  color: white !important;
+  /*margin-top: 50px;*/
+  font-size: 10PX;
+  padding: 0;
+  margin: 0;
+  
+}
+
+/* ==========================================================================
+  images
+========================================================================== */
+
+#lampImage{
+  background-size: cover;
+  margin-top: 62px;
+  height: 500px;
+  width: 300px;
+  
+}
+
+#mainImages{
+  padding-top: 80px;
+}
+
+/* ==========================================================================
+  Body Index
+========================================================================== */
+.bodyIndex{
+  margin-top: auto;
+  font-size: 70px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+

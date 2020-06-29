@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
@@ -20,28 +22,132 @@
   <meta name="apple-mobile-web-app-title" content="Firebase Database Quickstart">
   <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
 
-    <!-- Tile icon for Win8 -->
-    <meta name="msapplication-TileColor" content="#3372DF">
-    <meta name="msapplication-navbutton-color" content="#303F9F">
-  
-    <!-- Material Design Lite -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-orange.min.css">
-    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  <!-- Tile icon for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+  <meta name="msapplication-navbutton-color" content="#303F9F">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
-  
-  <link rel="icon" type="image/png" href="images/nysl_logo.png" sizes="16x16" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/full.css">
-
-
-
+  <!-- Material Design Lite -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-orange.min.css">
+  <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
 
   <title>Daddy Roys</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
+
+  <link rel="icon" type="image/png" href="images/logo.png" sizes="16x16" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-  
+  <!-- nav an logo for all pages -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- image logo -->
+    <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" width="70" height="70" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- start Home and Contact -->
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">HOME <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- finish nav -->
+
+  <!-- Daddy Roy's (index)-->
+  <section id="index">
+    <div class="container">
+      <div class="row">
+        <div class="col-7">
+          <article>
+            <br>
+            <p class="bodyIndex">
+              <br> Your home <br> <br> away from home
+            </p>
+          </article>
+
+          <!-- all container of the images-->
+          <div class="container-fluid" id="mainImages">
+            <div class="row">
+
+              <div class="card-deck">
+                <div class="card">
+                  <img src="../Daddy Roys/images/table1.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Daddy Roy's Bungalow</h5>
+                    <p class="card-text"><small class="text-muted">Miami.</small></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Daddy Roys/images/table2.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">The Nest</h5>
+                    <p class="card-text"><small class="text-muted">Independence, Winsconsin</small></p>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="../Daddy Roys/images/table3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Daddy Roy's Bed & Vintage</h5>
+                    <p class="card-text"><small class="text-muted">Independence, Winsconsin</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <!-- lamp image-->
+        <div class="col-5">
+          <img id="lampImage" src="images/lampnew.png" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+  <!-- Start all scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+  <script src="js/main.js"></script>
+
 </body>
+
 </html>
