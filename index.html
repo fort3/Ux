@@ -42,6 +42,8 @@
 
   <script src="https://unpkg.com/vue"></script>
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
 
 </head>
 
@@ -753,6 +755,9 @@
           <button type="button">
             Book Directly
           </button>
+
+
+
           <!-- vue modal forms -->
 
 
@@ -764,7 +769,7 @@
       
                     <div class="modal-header">
                       <slot name="header">
-                        default header
+                        fill dates for prices
                       </slot>
                     </div>
       
@@ -777,7 +782,7 @@
                     <div class="modal-footer">
                       <slot name="footer">
                         default footer
-                        <button class="modal-default-button" @click="$emit('close')">
+                        <button class="v-b-modal.modal-footer-lg" @click="$emit('close')">
                           OK
                         </button>
                       </slot>
@@ -791,14 +796,56 @@
         <body>
           <!-- app -->
           <div id="app">
-            <button id="show-modal" @click="showModal = true">Show Modal</button>
-            <!-- use the modal component, pass in the prop -->
+            
+
+            <form @submit="checkForm" action="" method="POST">
+
+              <p v-if="errors.length">
+                <b>Please correct the following error(s):</b>
+                <ul>
+                  <li v-for="error in errors">{{ error }}</li>
+                </ul>
+              </p>
+              
+              <p>
+                <label for="name">Name<label>
+                <input type="text" name="name" id="name" v-model="name">
+              </p>
+            
+              <p>
+                <label for="email">Email<label>
+                <input type="email" name="email" id="email" v-model="email">
+              </p>
+            
+              <p>
+                <label for="guests">Guests<label>
+                <select name="guests" id="guests" v-model="guests">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </p>
+            
+              <p>
+                <input type="submit" value="Submit">  
+              </p>
+            
+
+            </form>
+
+          
+
+            <button id="show-modal" @click="showModal = true">Book NOW!!</button>
+              <!-- use the modal component, pass in the prop -->
             <modal v-if="showModal" @close="showModal = false">
+              
               <!--
-            you can use custom content here to overwrite
-            default content
-          -->
-              <h3 slot="header">custom header</h3>
+              you can use custom content here to overwrite
+              default content
+              -->
+              <h3 slot="header">fill dates for prices</h3>
             </modal>
           </div>
 
@@ -834,6 +881,7 @@
 
 
   <!-- Start all scripts -->
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
