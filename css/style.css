@@ -57,13 +57,25 @@ nav .navbar-nav li a {
 /* ==========================================================================
   Body Index
 ========================================================================== */
+article{
+  min-width: 290px;
+  min-height: 200px;
+}
 .bodyIndex{
   margin-top: auto;
   font-size: 70px;
   font-weight: 500;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-wrap: break-word;
+  line-height: 1.5em;
 }
-
+@media(max-width: 768px){
+  .bodyIndex{
+    font-size: 56px;
+    font-weight: bold;
+    text-align: center;
+  }
+}
 /* ==========================================================================
   Maps
 ========================================================================== */
