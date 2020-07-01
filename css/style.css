@@ -64,10 +64,9 @@ article{
 .bodyIndex{
   margin-top: auto;
   font-size: 70px;
-  font-weight: 500;
+  font-weight: bolder;
   font-family: Arial, Helvetica, sans-serif;
-  overflow-wrap: break-word;
-  line-height: 1.5em;
+  line-height: 1.0em;
 }
 @media(max-width: 768px){
   .bodyIndex{
