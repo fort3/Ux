@@ -72,7 +72,8 @@ article{
   .bodyIndex{
     font-size: 56px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
+    line-height: 1.3em;
   }
 }
 /* ==========================================================================
