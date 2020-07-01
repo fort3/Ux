@@ -1,27 +1,50 @@
-$('#more').hide();
+///////////////////////////////
+// Set the inicial page
+///////////////////////////////
 
-$('#read').click(() =>{
+
+$('#more').hide('');
+$('#moreBedAndVintage').hide('');
+$('#index').show('');
+$('#bungalow').hide('');
+$('#theNest').hide('');
+$('#bedVintage').hide('');
+$('#contact').hide('');
+
+
+///////////////////////////////
+// Toggle for the more buttons
+///////////////////////////////
+$('#read').click(() => {
   $('#more').toggle('');
+});
+
+$('#readBedAndVintage').click(() => {
+  $('#moreBedAndVintage').toggle('');
+});
+
+///////////////////////////////
+// Toggle for the clicks sections
+///////////////////////////////
+$('#bungalowImage').click(() => {
+  $('#bungalow').toggle('');
+  $('#index').toggle('');
 })
 
+$('#theNestImage').click(() => {
+  $('#theNest').toggle('');
+  $('#index').toggle('');
+})
 
+$('#bedVintageImage').click(() => {
+  $('#bedVintage').toggle('');
+  $('#index').toggle('');
+})
 
-/*const read = () => {
-  let dots = document.getElementById('dots');
-  let moreText = document.getElementById('more');
-  let btnText = document.getElementById('read');
-  let feat = document.getElementById('features');
-  
-
-  if(dots.style.display === 'none'){
-    dots.style.display = 'inline';
-    btnText.innerHTML = 'Read more';
-    moreText.style.display = 'none';
-  }
-  else{
-    dots.style.display = 'none';
-    btnText.innerHTML = 'Read less';
-    moreText.style.display = 'inline';
-  }
-
-}*/
+$('#logo').click(() => {
+  $('#index').show('');
+  $('#bungalow').hide('');
+  $('#theNest').hide('');
+  $('#bedVintage').hide('');
+  $('#contact').hide('');
+})

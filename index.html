@@ -48,7 +48,7 @@
   <!-- nav an logo for all pages -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- image logo -->
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="#index" id="logo">
       <img src="images/logo.png" width="70" height="70" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
@@ -67,7 +67,7 @@
       </ul>
     </div>
   </nav>
-  <!-- finish nav -->
+  <!--/ nav -->
 
   <!-- Daddy Roy's (index)-->
   <section id="index">
@@ -87,27 +87,36 @@
 
               <div class="card-deck">
                 <div class="card">
-                  <img src="../Daddy Roys/images/table1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Daddy Roy's Bungalow</h5>
-                    <p class="card-text"><small class="text-muted">Miami.</small></p>
-                  </div>
+
+                  <a href="#index" id="bungalowImage">
+                    <img src="../Daddy Roys/images/table1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Daddy Roy's Bungalow</h5>
+                      <p class="card-text"><small class="text-muted">Miami.</small></p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="card">
-                  <img src="../Daddy Roys/images/table2.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">The Nest</h5>
-                    <p class="card-text"><small class="text-muted">Independence, Winsconsin</small></p>
-                  </div>
+                  <a href="#index" id="theNestImage">
+
+                    <img src="../Daddy Roys/images/table2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">The Nest</h5>
+                      <p class="card-text"><small class="text-muted">Independence, Winsconsin</small></p>
+                    </div>
+                  </a>
                 </div>
 
                 <div class="card">
-                  <img src="../Daddy Roys/images/table3.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Daddy Roy's Bed & Vintage</h5>
-                    <p class="card-text"><small class="text-muted">Independence, Winsconsin</small></p>
-                  </div>
+                  <a href="#index" id="bedVintageImage">
+
+                    <img src="../Daddy Roys/images/table3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Daddy Roy's Bed & Vintage</h5>
+                      <p class="card-text"><small class="text-muted">Independence, Winsconsin</small></p>
+                    </div>
+                  </a>
                 </div>
               </div>
 
@@ -116,16 +125,16 @@
 
         </div>
         <!-- lamp image-->
-        <div class="col-5">
-          <img id="lampImage" src="images/lampnew.png" class="img-fluid" alt="Responsive image">
+        <div class="col-4" id="lampImage">
+          <img src="images/lampnew.png" class="img-fluid" alt="Responsive image" style="margin-left: 35px;">
         </div>
       </div>
     </div>
   </section>
-  <!-- finish Daddy Roy's (index)-->
+  <!--/ Daddy Roy's (index)-->
 
   <!-- Bungalow -->
-  <section id="Bungalow">
+  <section id="bungalow">
     <div class="container">
       <div class="row">
 
@@ -178,14 +187,13 @@
         </div>
 
       </div>
-
     </div>
 
     <div class="container">
       <div class="row">
 
         <!-- features -->
-        <div class="col-7" id="features">
+        <div class="col-7">
           <br>
           <h2>Features:</h2>
           <br>
@@ -236,40 +244,452 @@
         </div>
 
         <!-- google map address-->
-        <div class="col-md-5 mb-4">
-
-          <!--Card-->
+        <div class="col-5">
           <div class="card card-cascade narrower">
-            <!--Card content-->
             <div class="card-body card-body-cascade text-center">
-
-              <!--Google map-->
-              <div id="map-container-google-9" class="z-depth-1-half map-container-5" style="height: 250px">
+              <div  class="z-depth-1-half map-container-5" style="height: 250px">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.174224793536!2d-80.26809988580129!3d25.731751416121405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b7f1e3843957%3A0xde556407854fac69!2s544%20San%20Lorenzo%20Ave%2C%20Coral%20Gables%2C%20FL%2033146%2C%20EE.%20UU.!5e0!3m2!1ses!2scz!4v1593509261969!5m2!1ses!2scz"
                   frameborder="0" style="border:0" allowfullscreen></iframe>
               </div>
-              
-              <!--Card image-->
               <div class="view view-cascade gradient-card-header peach-gradient">
                 <h5 class="mb-0">
                   <br>
                   Address: </h5>
                 <p> 544 San Lorenzo Avenue, Coral Gables, FL 33146 </p>
               </div>
-              <!--/Card image-->
-
             </div>
-            <!--/.Card content-->
-
           </div>
-          <!--/.Card-->
 
+          <!-- bag image -->
+          <div>
+            <img src="../Daddy Roys/images/picture_bag.png" alt="" class="bagImage">
+          </div>
         </div>
+
+
       </div>
     </div>
 
   </section>
+  <!--/ Bungalow -->
+
+  <!-- The Nest -->
+  <section id="theNest">
+    <div class="container">
+      <div class="row">
+
+        <!-- carousel images -->
+        <div class="col-7">
+
+          <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../Daddy Roys/images/table2.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../Daddy Roys/images/table3.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../Daddy Roys/images/table1.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        </div>
+        <!--/ carousel images-->
+
+        <!-- description -->
+        <div class="col-5">
+          <h4>The Nest</h4>
+          <p>
+            The Nest offers a spacious basement apartment newly renovated with bright white walls and colorful decor. It
+            features a large open space consisting of a living room, dining area, office area. One bedroom with a queen
+            bed, an extra twin daybed in the livingroom, plus a couch and loveseat. The bathroom has an oversized
+            shower, toilet and sink and is very spacious. Guests can prepare basic meals in the kitchenette with a full
+            sink, microwave and coffeemaker.
+          </p>
+
+          <button type="button">
+            Book Directly
+          </button>
+          <p><a href="">______or book using airbnb.com _________ </a></p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <!-- features -->
+        <div class="col-7" >
+          <br>
+          <h2>Features:</h2>
+          <br>
+
+          <p>
+            <b> Entire Home: </b>
+            <br> 
+            You’ll have the guest suite to yourself.
+            <br><br>
+
+            <b>Amenities for everyday living: </b>
+            <br>
+            The host has equipped this place for long stays - wifi, washer, dryer, and free parking included.
+            <br>
+            <br>
+
+            <b>Free cancellation for 48 hours: </b>
+            <br>
+            After that, cancel before 3:00 PM on Aug 4 and get a full refund, minus the first 30 days and the service
+            fee.<br>
+            <br>
+            <br>
+        </div>
+
+        <!-- google map address-->
+        <div class="col-5">
+          <div class="card card-cascade narrower">
+            <div class="card-body card-body-cascade text-center">
+              <div  class="z-depth-1-half map-container-5" style="height: 250px">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.174224793536!2d-80.26809988580129!3d25.731751416121405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b7f1e3843957%3A0xde556407854fac69!2s544%20San%20Lorenzo%20Ave%2C%20Coral%20Gables%2C%20FL%2033146%2C%20EE.%20UU.!5e0!3m2!1ses!2scz!4v1593509261969!5m2!1ses!2scz"
+                  frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+              <div class="view view-cascade gradient-card-header peach-gradient">
+                <h5 class="mb-0">
+                  <br>
+                  Address: </h5>
+                <p> N36384 STATE RD 93, Independence, WI 54747 </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- bag image -->
+          <div>
+            <img src="../Daddy Roys/images/picture_bag.png" alt="" class="bagImage">
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+  </section>
+  <!--/ The Nest -->
+
+
+  <!-- Bed & Vintage -->
+  <section id="bedVintage">
+    <div class="container">
+      <div class="row">
+
+        <!-- carousel images -->
+        <div class="col-7">
+
+          <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../Daddy Roys/images/table3.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../Daddy Roys/images/table2.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../Daddy Roys/images/table1.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        </div>
+        <!--/ carousel images-->
+
+        <!-- description -->
+        <div class="col-5">
+          <h4>Daddy Roy's Bed & Vintaget</h4>
+          <p>Independence, Wisconsin.</p>
+          <p>
+            My place is close to Independence Public High School & St. Peter & Paul's Church (Walking distance). You’ll
+            love my place because of The Vintage Vibe. My place is good for couples, business travelers, and families
+            (with kids).
+          </p>
+
+          <button type="button">
+            Book Directly
+          </button>
+          <p><a href="">______or book using airbnb.com _________ </a></p>
+
+        </div>
+        <!--/ description-->
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <!-- features -->
+        <div class="col-7" >
+          <br>
+          <h2>Features:</h2>
+          <br>
+
+          
+            <b> The space: </b>
+            <br>
+            <p> You’ll have the guest suite to yourself. </p>
+            <b>Amenities for everyday living: </b>
+            <br>
+            <p>A unique decor created almost entirely of upcycled and recycled materials
+              Welcome to DaddyRoy’s Bed & Vintage, our small family-run guest house. The home was built in the 1950’s by
+              Ahgie (Lyga) Johnson.
+              Ahgie’s father was Roy M. Lyga, the long-time proprietor of Lyga’s Store which operated on Main
+              (officially Washington Street).
+              In 1908 Roy began his mercantile career as a clerk in his father’s store. With silver hair but gold in his
+              heart, all his grand-children
+              called him “Daddy Roy”.
+
+              DaddyRoy’s is located at the entryway to Independence on Highway 93 / 121, a few minutes away from the
+              beautifully restored St. Peter & Paul Church.
+              A house to enjoy With an overall vintage vibe as a common theme in our décor, you’ll find something
+              charming in every room. Our favorite room is the bright and cheery breezeway, with orange doors and 70’s
+              floral print. In the summer it serves as an informal guest sitting room. The spacious living room and
+              dining room are combined as one great room. This area has several windows and is a light drenched space
+              perfect for those seeking peace and tranquility, to read, watch movies, or just watch the world go by. The
+              new flat screen TV comes with access to Amazon Prime and Apple TV (including multiple movies) is provided.
+              The dining table expands to seat six. The kitchen includes a banquette seating area for five framed by a
+              large picture window.
+              A washer and dryer are on the main floor. Wireless internet is available throughout the house.
+              The entrance area host an outdoor patio table and four cushioned chairs set under an awning for perfect
+              shade when dining or entertaining
+              guests. The back yard has a swing, hammock and other lawn furniture which is made available to longer term
+              renters upon request. </p>
+            <br>
+            <br>
+
+            <!-- more button -->
+            <span id="moreBedAndVintage">
+
+              <b>Our Rooms: </b>
+              <br>
+              <span>
+
+                We have two lovely guest rooms available at this time; a queen room (The Paris room) or a double room
+                (The
+                London room) or you can rent both as a “suite”. Both bedrooms are on the main floor. The bathroom has a
+                tub/shower combination with grab bars near the shower and toilet for the elderly or those requiring
+                assistance using our facilities.
+              </span>
+              
+              <br>
+              <br>
+              <br>
+              <b>Our Pricing is Simple:</b>
+              <span>
+                We have two lovely rooms available, each significantly different in style and flavor.
+                <ul>
+                  <li>
+                    Paris room (queen bed – traditional mattress) - $75 per room per night, excluding breakfast.
+
+                  </li>
+                  <li>
+                    London room (double bed – gel mattress) - $80 per room per night, excluding breakfast.
+
+                  </li>
+                  <li>
+                    Paris and London rooms together (sharing bathroom) - $125 per night, excluding breakfast.
+
+                  </li>
+                </ul>
+                The Tandem room is owner occupied and not available for rent at this time.
+              </span>
+              <br>
+              <b>Guest Access:</b>
+              <span>
+                The rental of one bedroom gives you access to the kitchen and livingroom.
+                Typically we only rent to one guest/family at a time and provide access to the house,
+                but not to the other bedrooms unless the family would like to rent the additional bedrooms 1
+                Bedroom $85, 2 Bedrooms $120, and on occasion the 3rd bedrooms can be added for a total of $145.
+                You can specify the set up and your needs while we are in touch.
+              </span>
+              <br>
+              <br>
+              <b>Other Things To Note</b>
+              <span>
+                Commitment to the Environment
+                We hope you’ll appreciate our quest for comfort combined with ecologically minded products and community
+                minded practices.
+                We have an entire closet off the kitchen dedicated to recycling with with clearly labeled containers. We
+                feature many reused “upcycled” items:
+                from the coffee tables in the living room made out of old suitcases, to the 1940’s lard cans from the
+                Olde
+                Creamery which we’ve turned into end
+                tables in the breezeway.
+                Some of our other environmental practices include:
+              </span>
+              <ul>
+                <li>
+                  A two day minimum for all guests to reduce environmental impact. This is particularly important at
+                  DaddyRoys's B&V since we wash all our linens between guests.
+                </li>
+                <li>
+                  Energy efficient light bulbs
+                </li>
+                <li>
+                  Ceiling fans in the living room, breezeway, bedrooms with additional floor fans available. Enjoy the
+                  great Burnside breeze and reduce the need for air conditioning in the summer months
+                </li>
+                <li>
+                  A good old fashioned clothes line located in the back yard just off the laundry room.
+                </li>
+                <li>
+                  No Smoking. There is a strict no smoking policy within the B&V.
+                </li>
+              </ul>
+            </span>
+
+            <button type="button" id="readBedAndVintage" class="button-row">Read More</button>
+            <!--/ more button-->
+
+        </div>
+        <!--/ features -->
+
+        <!-- google map address-->
+        <div class="col-5">
+          <div class="card card-cascade narrower">
+            <div class="card-body card-body-cascade text-center">
+              <div class="z-depth-1-half map-container-5" style="height: 250px">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.174224793536!2d-80.26809988580129!3d25.731751416121405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b7f1e3843957%3A0xde556407854fac69!2s544%20San%20Lorenzo%20Ave%2C%20Coral%20Gables%2C%20FL%2033146%2C%20EE.%20UU.!5e0!3m2!1ses!2scz!4v1593509261969!5m2!1ses!2scz"
+                  frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+              <div class="view view-cascade gradient-card-header peach-gradient">
+                <h5 class="mb-0">
+                  <br>
+                  Address: </h5>
+                <p> N36384 STATE RD 93, Independence, WI 54747 </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- bag image -->
+          <div>
+            <img src="../Daddy Roys/images/picture_bag.png" alt="" class="bagImage">
+          </div>
+        </div>
+        <!--/ google map address-->
+
+
+      </div>
+    </div>
+  </section>
+  <!--/ Bed & Vintage -->
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+
+        <!-- carousel images -->
+        <div class="col-7">
+
+          <div id="carouselExampleIndicators4" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators4" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators4" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators4" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="../Daddy Roys/images/table3.png" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../Daddy Roys/images/table2.png" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../Daddy Roys/images/table1.png" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators4" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators4" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+        </div>
+        <!--/ carousel images-->
+
+        <!-- google map address-->
+        <div class="col-5">
+          <div class="card card-cascade narrower">
+            <div class="view view-cascade gradient-card-header peach-gradient">
+              <h4 class="mb-0">
+
+                Address: </h4>
+              <p> 5641 John Purvis Road<br>
+                Providence Bay, Ontario P0P 1TO <br>
+                Canada
+              </p>
+            </div>
+            <div class="card-body card-body-cascade text-center">
+              <div  class="z-depth-1-half map-container-5" style="height: 250px">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22301.699414262886!2d-82.28732862634773!3d45.67667309815389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d3214fc085245ad%3A0x2a2479ccf56fbba6!2sProvidence%20Bay%2C%20Ontario%20P0P%202B0%2C%20Canad%C3%A1!5e0!3m2!1ses!2scz!4v1593524682713!5m2!1ses!2scz"
+                  width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                  tabindex="0"></iframe>
+
+              </div>
+
+            </div>
+          </div>
+          <button type="button">
+            Book Directly
+          </button>
+          <p><a href="">______or book using airbnb.com _________ </a></p>
+        </div>
+        <!--/ google map address-->
+
+
+
+      </div>
+    </div>
+
+
+  </section>
+  <!--/ Contact -->
 
 
 

@@ -26,16 +26,26 @@ nav .navbar-nav li a {
 ========================================================================== */
 
 #lampImage{
-  background-size: cover;
-  margin-top: 62px;
-  height: 500px;
-  width: 300px;
-  margin-left: 60px;
+  display: block;
+  margin-top: 75px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  width: 100px;
   
 }
 
 #mainImages{
   padding-top: 80px;
+}
+
+.bagImage{
+  display: block;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 175px;
+  height: 175px
 }
 
 /* ==========================================================================
@@ -64,4 +74,3 @@ nav .navbar-nav li a {
   width:100%;
   position:absolute;
   }
-
