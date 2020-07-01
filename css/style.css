@@ -34,7 +34,13 @@ nav .navbar-nav li a {
   width: 100px;
   
 }
-
+/* media query for responsive design of image*/
+@media(max-width:768px){
+  #lampImage{
+    display: none !important;
+    width: 0px;
+  }
+}
 #mainImages{
   padding-top: 80px;
 }
@@ -81,6 +87,32 @@ nav .navbar-nav li a {
 
 #bungalow, #theNest, #bedVintage, #contact{
   margin-top: 50px;
+}
+/* ==========================================================================
+  Divs query
+  ========================================================================== */
+@media(max-width:768px){
+  #sec_contain{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+  }
+  .card{
+    margin: 20px;
+  }
+}
+/* ==========================================================================
+  Card Title Editing
+  ========================================================================== */
+
+.card-title{
+  color: black;
+  font-weight: bold;
+}
+#bungalowImage, #theNestImage, #bedVintageImage{
+  text-decoration: none;
 }
 
  /* ==========================================================================
