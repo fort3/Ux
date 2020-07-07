@@ -8,7 +8,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 97px;
+  height: auto/*97px*/;
 
 }
 
@@ -19,6 +19,12 @@ nav .navbar-nav li a {
   padding: 0;
   margin: 0;
   
+}
+@media(max-width:768px){
+  nav .navbar-nav li a{
+    color:white !important;
+    font-weight: bold;
+  }
 }
 
 /* ==========================================================================
